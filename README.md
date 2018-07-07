@@ -1,7 +1,7 @@
 <h1 align="center">
 
 <p align="center">
-  <img src="./assets/hero.png" />
+  <img src="./assets/hero.gif" />
 </p>
 
 <p align="center">
@@ -15,6 +15,44 @@
 
 If this project has helped you out, please support us with a star 🌟
 </h1>
+
+A stepper with a sliding label in the middle. Pan the label or tap the buttons.
+
+
+## 📖 Getting started
+
+`$ npm install react-native-number-stepper --save`
+
+
+## 💻 Usage
+
+```javascript
+import { RNNumberStepper } from 'react-native-number-stepper';
+
+```
+
+## 💡 Props
+
+
+| Prop              | Type       | Default | Note                                                                                                       |
+| ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+| `size`       | `string`     |   `1`      | Specify the size of stepper
+| `value`       | `array`     |   `0`      | Specify the default value fo stepper
+| `minValue`       | `number`     |    `0`     | Specify the minimum value limit of stepper
+| `maxValue`       | `number`     |    `10`     | Specify the maximum value limit of stepper
+| `stepValue`       | `number`     |    `1`     | Specify the incremental value of stepper
+| `autoRepeat`       | `string`     |   `true`      | Specify the auto repeat flag value
+| `leftButtonText`       | `string`     |   `-`      | Specify the left button display text
+| `rightButtonText`       | `string`     |   `+`      | Specify the right button display text
+| `buttonsTextColor`       | `string`     |   `#FFFFFFFF`      | Specify the button text color
+| `buttonsBackgroundColor`       | `string`     |   `#357FC0`      | Specify the buttons background color
+| `labelTextColor`       | `string`     |   `#FFFFFF`      | Specify the label text color
+| `labelBackgroundColor`       | `string`     |   `#4098E0`      | Specify the label background color
+| `buttonsContainerWidth`       | `string`     |   `50`      | Specify the buttons container width
+| `cornorRadius`       | `string`     |   `8`      | Specify the cornor radius value
+| `borderWidth`       | `string`     |   `0`      | Specify the border width of stepper
+| `borderColor`       | `string`     |   `#FFFFFF`      | Specify the border color of stepper
+
 
 
 ## ✨ Credits
