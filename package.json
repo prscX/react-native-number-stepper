@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-number-stepper",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React Native: Number Stepper",
   "main": "js/RNNumberStepper.js",
   "scripts": {
