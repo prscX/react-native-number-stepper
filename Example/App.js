@@ -21,8 +21,12 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <RNNumberStepper
           value={5}
-          size={1}
+          // size={1}
           autoRepeat={true}
+          stepValue={2}
+          onChange={(nValue, oValue) => {
+            console.log('New Value: ' + nValue + ', Old Value: ' + oValue)
+          }}
           // width={300}
           // height={100}
           // leftButtonText={'M'}

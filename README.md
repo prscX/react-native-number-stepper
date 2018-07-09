@@ -52,7 +52,7 @@ import { RNNumberStepper } from 'react-native-number-stepper';
 | `cornorRadius`       | `string`     |   `8`      | Specify the cornor radius value
 | `borderWidth`       | `string`     |   `0`      | Specify the border width of stepper
 | `borderColor`       | `string`     |   `#FFFFFF`      | Specify the border color of stepper
-
+| `onChange`       | `func`     |   ``      | Specify function for the onChange event listener
 
 
 ## ✨ Credits

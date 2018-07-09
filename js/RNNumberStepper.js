@@ -41,7 +41,9 @@ class RNNumberStepper extends PureComponent {
 
     cornorRadius: PropTypes.number,
     borderWidth: PropTypes.number,
-    borderColor: PropTypes.string
+    borderColor: PropTypes.string,
+
+    onChange: PropTypes.func
   };
 
   static defaultProps = {
@@ -96,7 +98,7 @@ class RNNumberStepper extends PureComponent {
   }
 
   _renderLeftButton() {
-    let { leftButtonText, autoRepeat, stepValue, minValue, maxValue } = this.props;
+    let { leftButtonText, autoRepeat, stepValue, minValue, maxValue, onChange } = this.props;
     let { value } = this.state
 
     return this._renderButton({
@@ -110,14 +112,14 @@ class RNNumberStepper extends PureComponent {
         }
 
         this._animate();
-        this.setState({
-          value: newValue
+        this.setState({value: newValue}, () => {
+          onChange && onChange(newValue, value);
         })
       }
     })
   }
   _renderRightButton() {
-    let { rightButtonText, autoRepeat, stepValue, minValue, maxValue } = this.props;
+    let { rightButtonText, autoRepeat, stepValue, minValue, maxValue, onChange } = this.props;
     let { value } = this.state
 
     return this._renderButton({
@@ -131,7 +133,9 @@ class RNNumberStepper extends PureComponent {
         }
 
         this._animate()
-        this.setState({ value: newValue });
+        this.setState({ value: newValue }, () => {
+          onChange && onChange(newValue, value)
+        });
       }
     })
   }
@@ -139,11 +143,7 @@ class RNNumberStepper extends PureComponent {
   _animate () {
     this.labelContainerRef && this.labelContainerRef
         .fadeIn(1000)
-        .then(endState =>
-          console.log(
-            endState.finished ? "bounce finished" : "bounce cancelled"
-          )
-        );
+        .then(endState =>{ });
   }
 
   _renderLabelContainer() {
