@@ -36,7 +36,9 @@ import { RNNumberStepper } from 'react-native-number-stepper';
 
 | Prop              | Type       | Default | Note                                                                                                       |
 | ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
-| `size`       | `string`     |   `1`      | Specify the size of stepper
+| `size`       | `number`     |   `1`      | Specify the size of stepper
+| `width`       | `number`     |   `150`      | Specify the width of stepper
+| `height`       | `number`     |   `35`      | Specify the height of stepper
 | `value`       | `array`     |   `0`      | Specify the default value fo stepper
 | `minValue`       | `number`     |    `0`     | Specify the minimum value limit of stepper
 | `maxValue`       | `number`     |    `10`     | Specify the maximum value limit of stepper
@@ -48,9 +50,9 @@ import { RNNumberStepper } from 'react-native-number-stepper';
 | `buttonsBackgroundColor`       | `string`     |   `#357FC0`      | Specify the buttons background color
 | `labelTextColor`       | `string`     |   `#FFFFFF`      | Specify the label text color
 | `labelBackgroundColor`       | `string`     |   `#4098E0`      | Specify the label background color
-| `buttonsContainerWidth`       | `string`     |   `50`      | Specify the buttons container width
-| `cornorRadius`       | `string`     |   `8`      | Specify the cornor radius value
-| `borderWidth`       | `string`     |   `0`      | Specify the border width of stepper
+| `buttonsContainerWidth`       | `number`     |   `50`      | Specify the buttons container width
+| `cornorRadius`       | `number`     |   `8`      | Specify the cornor radius value
+| `borderWidth`       | `number`     |   `0`      | Specify the border width of stepper
 | `borderColor`       | `string`     |   `#FFFFFF`      | Specify the border color of stepper
 | `onChange`       | `func`     |   ``      | Specify function for the onChange event listener
 
