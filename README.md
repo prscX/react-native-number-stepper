@@ -11,7 +11,9 @@
 </p>
 
 
-    ReactNative: Number Stepper (Android/iOS)
+    ReactNative: Number Stepper (Android/iOS): Deprecated
+    
+Due to time constraint, this library is deprecated and not maintained anymore, You can still use this library.
 
 If this project has helped you out, please support us with a star 🌟
 </h1>
